@@ -12,7 +12,9 @@ for (let i = 0; i < TOTAL_SQUARES; i++) {
     });
 
     square.addEventListener("mouseout", () => {
-        square.style.backgroundColor = "";
+        setTimeout(() => {
+            square.style.backgroundColor = "";
+        }, 1000);
     });
 
     container.appendChild(square);
